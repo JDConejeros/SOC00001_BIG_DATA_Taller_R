@@ -52,6 +52,14 @@ thanks: |
 
 El taller tiene por objetivo introducir a los/as estudiantes a las herramientas básicas del lenguaje de programación en R para la manipulación de datos, construcción de tablas de resultados y piezas gráficas. Se espera que al final de los talleres los/as estudiantes estén preparados para trabajar las técnicas de análisis de Big Data para las ciencias sociales.
 
+\vspace{1cm}
+
+```{r echo=FALSE, fig.align='center', warning=FALSE}
+knitr::include_graphics("image/im1.png", dpi=400)
+``` 
+
+\break
+
 ## Metodologia de trabajo
 
 La clase tiene un enfoque práctico, por lo que replicaremos en conjunto el código de la sesión de trabajo. A su vez, realizaremos algunos test para evaluar avances y resolveremos problemas prácticos. Idealmente se espera que los/as estudiantes puedan traer su computador a las sesiones de trabajo, sin embargo, también se puede trabajar directamente en el laboratorio. Los talleres serán los siguientes tres miércoles de 14:30 a 17:30 con un break de 10 minutos.
@@ -62,7 +70,7 @@ Pueden encontrar el material en: https://github.com/JDConejeros/SOC00001_BIG_DAT
 
 Serán 3 talleres aplicados y se veran los siguientes contenidos: 
 
-**Taller 1:** Introducción a R, RStudio y Colab (09/03/2022)
+**Taller 1:** [Introducción a R, RStudio y Colab (09/03/2022)](https://github.com/JDConejeros/SOC00001_BIG_DATA_Taller_R/tree/main/Taller%201)
 
 > 1.1 Instalación de R y RStudio
 
@@ -75,10 +83,6 @@ Serán 3 talleres aplicados y se veran los siguientes contenidos:
 > 1.5 Estructura de datos y variables.
 
 > 1.6 Exploración inicial de una base de datos.
-
-> 1.7 Introducción a Colab
-
-\break
 
 **Taller 2:** Manipulación de tablas de datos (16/03/2022)
 
@@ -103,6 +107,10 @@ Serán 3 talleres aplicados y se veran los siguientes contenidos:
 > 3.2 Construcción de gráficos en GGPLOT2 y otras herramientas.
 
 > 3.3 Reportería en RMarkdown.
+
+> 3.4 Introducción a Colab.
+
+\break
 
 ## Recursos R
 

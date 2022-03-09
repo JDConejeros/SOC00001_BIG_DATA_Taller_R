@@ -16,7 +16,9 @@ El taller tiene por objetivo introducir a los/as estudiantes a las herramientas 
 
 ## Contenido del repositorio
 
-**Taller 1:** Introducción a R, RStudio y Colab (09/03/2022). Códigos, tablas de datos y ejercicios.
+**Taller 1:** [Introducción a R, RStudio y Colab (09/03/2022)](https://github.com/JDConejeros/SOC00001_BIG_DATA_Taller_R/tree/main/Taller%201) 
+
+Códigos, tablas de datos y ejercicios.
 
 1.1 Instalación de R y RStudio
 
@@ -30,9 +32,11 @@ El taller tiene por objetivo introducir a los/as estudiantes a las herramientas 
 
 1.6 Exploración inicial de una base de datos.
 
-1.7 Introducción a Colab
+---
 
-**Taller 2:** Manipulación de tablas de datos (16/03/2022). Códigos, tablas de datos y ejercicios.
+**Taller 2:** Manipulación de tablas de datos (16/03/2022). 
+
+Códigos, tablas de datos y ejercicios.
 
 2.1 Filtrar y ordenar tablas de datos.
 
@@ -48,13 +52,19 @@ El taller tiene por objetivo introducir a los/as estudiantes a las herramientas 
 
 2.7 Generar nuevas variables.
 
-**Taller 3:** Reportería y Visualización (23/03/2022). Códigos, tablas de datos y ejercicios.
+---
+
+**Taller 3:** Reportería y Visualización (23/03/2022). 
+
+Códigos, tablas de datos y ejercicios.
 
 3.1 Construcción de tablas.
 
 3.2 Construcción de gráficos en GGPLOT2 y otras herramientas.
 
 3.3 Reportería en RMarkdown.
+
+3.4 Introducción a Colab.
 
 
 ## Recursos R
