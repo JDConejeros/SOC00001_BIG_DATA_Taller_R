@@ -8,6 +8,12 @@
 
 ---
 
+**Avisos:**
+
++ Pueden revisar una guía inicial de R y RStudio en el siguiente link: https://jdconejeros.shinyapps.io/Guia_inicial_R_SOC0001_BigData/
+
++ Responder el siguiente formulario para saber sus impresiones del taller 1: https://docs.google.com/forms/d/e/1FAIpQLSc-pwq0wTZPw9IcgBjy2iRgdA3YuH-PnPvmPNM9rDWrRLka7w/viewform?usp=sf_link
+
 Repositorio con material en R para el curso de BIG-DATA. 
 
 ## Objetivo
