@@ -43,9 +43,10 @@ setwd(mi_directorio)
 
 ### 1.1 Vectores y variables ----
 
-c(1) #Vector de un elemento
+a1 <- c(1) #Vector de un elemento =
+a2 = c(1)
 c(1, 2 , 3 , 4) #Crear un vector de números
-c(1, "hola" , "chao" , 4) #Crear un vector números y carácteres
+a3 <- c(1, "hola" , "chao" , 4) #Crear un vector números y carácteres
 
 #Secuencia de valores
 1:4
@@ -55,11 +56,14 @@ seq(1, 4)
 seq(4, 1)
 -1:2
 seq(-1, 2)
-seq(2, 8, by=2)
+seq(from=2, to=8, by=2)
 seq(0, 1, by=0.1)
-seq(0, 1, length=11)
+seq(0, 1, length=10)
 rep(0:1, 10)
 ?length
+
+a <- 1
+A <- 1
 
 #Objetos (importancia de los nombres)
 numeros_palabras <- c(1, "hola" , "chao" , 4)
@@ -67,11 +71,13 @@ numeros_palabras
 
 secuencia <- seq(0, 1, length=11)
 secuencia
+secuencia*numeros_palabras
 
 #Operaciones aritméticas con vectores
 c(1, 2, 3, 4)/2
 (1:4)/2
 (1:4)*(4:1)
+c(1,2,3,4)*c(4,3,2,1)
 
 log(c(0.1, 1, 10, 100), base=10)
 
@@ -83,7 +89,7 @@ secuencia <- seq(0, 1, length=11)
 secuencia
 secuencia <- secuencia*secuencia
 secuencia
-
+secuencia^2
 promedio <- sum(secuencia)/11
 promedio
 
@@ -98,8 +104,8 @@ promedio2
 #Dummy
 sexo <- c("Femenino", "Masculino", "Masculino", "Femenino")
 sexo 
-sexo[3] 
-
+sexo[1:2] 
+sexo <- c(1,0,0,1)
 #Nominales
 animales <- c("Elefante", "Jirafa", "Mono", "Caballo")
 animales
@@ -133,6 +139,10 @@ matrix(1:9,3,3) #Matriz de 3filasx3columnas con valores del 1 al 9
 x <- matrix(1:9,3,3)
 x
 dim(x)
+
+matrix(1:8,2,4,byrow = FALSE) 
+matrix(1:8,2,4,byrow = TRUE) 
+
 
 y <- matrix(1:8,2,4,byrow = FALSE) #Genera una matriz con 2 filas y 4 columnas
 y
