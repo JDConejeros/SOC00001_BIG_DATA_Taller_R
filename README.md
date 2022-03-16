@@ -40,7 +40,7 @@ Códigos, tablas de datos y ejercicios.
 
 ---
 
-**Taller 2:** Manipulación de tablas de datos (16/03/2022). 
+**Taller 2:** [Manipulación de tablas de datos (16/03/2022)](https://github.com/JDConejeros/SOC00001_BIG_DATA_Taller_R/tree/main/Taller%202) 
 
 Códigos, tablas de datos y ejercicios.
 
@@ -50,7 +50,7 @@ Códigos, tablas de datos y ejercicios.
 
 2.3 Dividir tablas de datos.
 
-2.4 Tipo de variables: cuantitativas, textis, fechas. 
+2.4 Tipo de variables: cuantitativas, textos, fechas. 
 
 2.5 Seleccionar variables.
 
@@ -60,7 +60,7 @@ Códigos, tablas de datos y ejercicios.
 
 ---
 
-**Taller 3:** Reportería y Visualización (23/03/2022). 
+**Taller 3:** [Reportería y Visualización (23/03/2022)]() 
 
 Códigos, tablas de datos y ejercicios.
 
