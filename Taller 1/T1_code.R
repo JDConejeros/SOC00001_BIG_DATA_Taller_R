@@ -258,9 +258,9 @@ log("a")
 log(b)
 log(a) #Por DEFAULT es logaritmo natural, en base a euler 2,718.
 log(a, base=10)
-log(2,718) #Cercano a 1 porque euler elevado a 1 = euler
+log(2.718) #Cercano a 1 porque euler elevado a 1 = euler
 log(100, base=10)
-log10(100)
+log10(a)
 
 ### 4.2 Argumentos ----
 
@@ -271,6 +271,10 @@ args("log")
 
 ?sum
 args("sum")
+
+a <- c(1,2,NA,4)
+sum(a)
+sum(a, na.rm=TRUE)
 
 ### 4.3  Podemos crear nuestras propias funciones  ----
 
@@ -339,6 +343,7 @@ rm(list = ls()) #Limpiamos la memoria
 library() #Puedo revisar los paquetes instalados
 install.packages("libreria") #Para instalar
 #Las librerías se instalan sólo una vez, pero deben ser cargadas si se quieren utilizar en la sesión de trabajo
+install.packages("biblioteca")
 library("libreria") 
 
 install.packages("tidyverse") # Todas las herramientas para análisis de datos
@@ -369,8 +374,9 @@ dim(data)   # Observaciones y variables
 colnames(data) # Nombre de nuestras variables 
 str(data)   # Visor de nuestras variables
 
+head(data)  # Primeras 10 observaciones
 head(data, n=10)  # Primeras 10 observaciones
-head(data[2])      # por nombres
+head(data[1,2])      # por nombres
 head(data[[2]])    # por ubicación 
 
 tail(data, n=10)  # Últimas 10 observaciones
@@ -385,12 +391,12 @@ data[,c(1, 3)] # Veamos la primera y última fila de una BBDD [fila, columna]
 data[,c("idalumno","ptje_mate2m_alu")] # ¿Cuál es la diferencia?
 data$idalumno
 print(data$idalumno)
+View(data)
+data2 <- data[data$cod_depe2 == "Municipal" &  data$ptje_mate2m_alu<100,] # Usemos condiciones 
 
-data[data$cod_depe2 == "Municipal" &  data$ptje_mate2m_alu<100,] # Usemos condiciones 
+data[data$ptje_mate2m_alu  %in% c(100:120),] # Comparar con varios valores
 
-data[data$ptje_mate2m_alu  %in% c(100, 120),] # Comparar con varios valores
-
-data[data$ptje_mate2m_alu==100 | data$ptje_mate2m_alu==120,] # Equivalente
+data[data$ptje_mate2m_alu==100 | data$ptje_mate2m_alu==120, c("cod_dep2")] # Equivalente
 
 ### 7.3 Modificar ----
 
@@ -401,7 +407,7 @@ data$media_ptjes <- (data$ptje_mate2m_alu + data$ptje_lect2m_alu)/2
 data[data$cod_depe2 == "Municipal" &  data$ptje_mate2m_alu<100,]
 
 # Podemos ordenar nuestra BBDD
-data[order(data$ptje_mate2m_alu),]
+data <- data[order(data$ptje_mate2m_alu),]
 
 ### 7.4 Descriptivos ----
 
@@ -414,6 +420,7 @@ summary(data[,4])
 summary(data[4,])
 library(Hmisc)
 describe(data)
+var(data$ptje_lect2m_alu)
 sd(data$ptje_lect2m_alu, na.rm = TRUE)
 sd(data$ptje_lect2m_alu)
 
@@ -448,8 +455,11 @@ write_sas(data, "Taller 1/output/simce_modificada.sas8bdat")
 #### 7.5.6 Base en formato .dta  ----
 write_dta(data, "Taller 1/output/simce_modificada.dta")
 
-#### 7.5.7 Base en formato .Routput ----
-save(data, file="Taller 1/output/simce_modificada.Routput")
+#### 7.5.7 Base en formato .RData ----
+save(data, file="Taller 1/output/simce_modificada.RData")
+
+## Podemos guardar en formato RDS
+save(data, file="Taller 1/output/simce_modificada.rds")
 
 ########################################################################/
 # EJERCICIO PROPUESTO ----
@@ -474,3 +484,4 @@ sum(data=data, x=ptje_mate2m_alu)
 
 # a. ¿Podemos iterar esta función? 
 # b. Piense una manera de aplicar esta función en todas las columnas del objeto data mediante una iteracción
+names <- colnames(data)[-2]
