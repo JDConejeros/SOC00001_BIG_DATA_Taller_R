@@ -27,7 +27,7 @@
 # forcats: trabajo con variables de tipo factor (variables cualitativas). 
 
 install.packages("tidyverse") # Podemos descargar todas las librerías
-#library(tidyverse)
+library(tidyverse)
 
 # Cargamos la BBDD
 library(readr)
