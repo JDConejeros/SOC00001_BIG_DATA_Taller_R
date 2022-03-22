@@ -60,7 +60,9 @@ Códigos, tablas de datos y ejercicios.
 
 ---
 
-**Taller 3:** [Reportería y Visualización (23/03/2022)]() 
+**Taller 3:** [Reportería y Visualización (23/03/2022)](https://github.com/JDConejeros/SOC00001_BIG_DATA_Taller_R/tree/main/Taller%203) 
+
+Las bases de datos las puedes descargar aquí: https://www.dropbox.com/sh/zbwbo1a95kcu6xr/AACVmkQq1dOoGUlCjD_1FwcKa?dl=0
 
 Códigos, tablas de datos y ejercicios.
 
@@ -70,7 +72,7 @@ Códigos, tablas de datos y ejercicios.
 
 3.3 Reportería en RMarkdown.
 
-3.4 Introducción a Colab.
+3.4 [Introducción a Colab]().
 
 
 ## Recursos R
